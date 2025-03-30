@@ -3,6 +3,7 @@
     background-color: rgba(249,248,248,255);
     padding: 1.5rem;
     scroll-snap-align: start;
+    height: fit-content;
 }
 .navList {
    width: 90%;
