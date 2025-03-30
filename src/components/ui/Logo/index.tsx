@@ -6,13 +6,10 @@ const LogoImage = () => {
   return (
     <motion.div
       style={{
-        position: "absolute",
+        position: "sticky",
         width: "10%",
         height: "100%",
-        left: 8,
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
       }}
       {...logoStyles}
     >

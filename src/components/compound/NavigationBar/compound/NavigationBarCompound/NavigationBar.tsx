@@ -2,36 +2,12 @@ import { CiSearch } from "react-icons/ci";
 import { NavigationBarContext, useNavigationBarContext } from "./context";
 import { NavigationBarProps } from "./interface";
 import styles from "./styles/styles.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import LogoImage from "@/components/ui/Logo";
 import { roboto } from "@/app/fonts";
 
 const NavigationBar = function ({ options, children }: NavigationBarProps) {
   const navigationRef = useRef<HTMLDivElement>(null);
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isInTop, setIsInTop] = useState(false);
-
-  useEffect(() => {
-    const checkIfTop = () => {
-      if (navigationRef.current) {
-        const rect = navigationRef.current.getBoundingClientRect();
-        if (rect.top === 0) {
-          setIsInTop(true);
-        } else {
-          setIsInTop(false);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", checkIfTop);
-    // Initial check
-    checkIfTop();
-
-    return () => {
-      window.removeEventListener("scroll", checkIfTop);
-    };
-  }, []);
 
   return (
     <NavigationBarContext.Provider value={{ options }}>

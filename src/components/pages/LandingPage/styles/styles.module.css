@@ -4,6 +4,8 @@
     scroll-snap-type: y mandatory;
     position: relative;
     scroll-behavior: smooth;
+    backface-visibility: hidden;
+
 }
 
 .mouseContainer {

@@ -6,6 +6,10 @@ const NavigationBarComponent = function () {
   const sx = useMediaQuery("(min-width: 768px)", {
     initializeWithValue: false,
   });
+
+  const md = useMediaQuery("(min-width: 1440px)", {
+    initializeWithValue: false,
+  });
   return (
     <>
       {" "}
@@ -14,11 +18,13 @@ const NavigationBarComponent = function () {
           ButtonProducts: "Productos",
           ButtonAboutUs: "Sobre nosotros",
           ButtonContact: "Contactanos",
+          ButtonServices: "Servicios",
         }}
       >
         {sx && <NavigationBar.ButtonProducts />}
         {sx && <NavigationBar.ButtonAboutUs />}
-        {sx && <NavigationBar.ButtonContact />}
+        {md && <NavigationBar.ButtonContact />}
+        {md && <NavigationBar.ButtonServices />}
       </NavigationBar>{" "}
     </>
   );
