@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { services } from "./data";
+import { services } from "../../../data/services";
 import styles from "./styles/styles.module.css";
 import { GrServices } from "react-icons/gr";
 import { IoIosArrowForward } from "react-icons/io";

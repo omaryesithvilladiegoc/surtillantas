@@ -1,7 +1,5 @@
 "use client";
 import MainWrapper from "../../layout/MainWraper";
-import NavBar from "../../compound/NavBar";
-import NavigationBarComponent from "../../compound/NavigationBar";
 import { BrandsSlider } from "@/components/sections/BrandsSlider";
 import GridServices from "@/components/sections/GridServices";
 import styles from "./styles/styles.module.css";
@@ -16,10 +14,10 @@ const LandingPage = () => {
     if (!contentRef.current) return;
 
     const scrollAmount = direction === "up" ? -800 : 800;
-    const currentScroll = contentRef.current.scrollTop;
+    const currentScroll = document.body.scrollTop;
     const targetScroll = currentScroll + scrollAmount;
 
-    contentRef.current.scrollTo({
+    document.body.scrollTo({
       top: targetScroll,
       behavior: "smooth",
     });
@@ -27,8 +25,6 @@ const LandingPage = () => {
 
   return (
     <div className={styles.landingPage} ref={contentRef}>
-      <NavBar />
-      <NavigationBarComponent />
       <div>
         <MainWrapper />
       </div>

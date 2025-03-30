@@ -5,6 +5,7 @@ import styles from "./styles/styles.module.css";
 import { useRef } from "react";
 import LogoImage from "@/components/ui/Logo";
 import { roboto } from "@/app/fonts";
+import { useRouter } from "next/navigation";
 
 const NavigationBar = function ({ options, children }: NavigationBarProps) {
   const navigationRef = useRef<HTMLDivElement>(null);
@@ -74,12 +75,13 @@ NavigationBar.ButtonBrands = function ButtonBrands() {
 };
 
 NavigationBar.ButtonServices = function ButtonServices() {
+  const router = useRouter();
   const context = useNavigationBarContext();
   const text = context.options.ButtonServices;
   return (
     <div className={styles.NavigationButton}>
       {" "}
-      <button> {text} </button>{" "}
+      <button onClick={() => router.push("servicios")}> {text} </button>{" "}
     </div>
   );
 };

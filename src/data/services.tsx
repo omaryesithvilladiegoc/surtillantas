@@ -1,4 +1,4 @@
-import { Service } from "../interfaces";
+import { Service } from "../components/sections/GridServices/interfaces";
 
 export const services: Service[] = [
   {

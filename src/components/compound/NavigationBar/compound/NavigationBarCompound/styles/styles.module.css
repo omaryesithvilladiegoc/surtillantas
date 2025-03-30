@@ -26,11 +26,14 @@
   border-bottom: 1px solid black;
   transition: all 0.3s ease-in;
 }
-.NavigationButton button:focus {
-  border-bottom: 1px solid black;
-  transition: all 0.3s ease-in;
+.NavigationButton button:active,
+.NavigationButton button.active {
+  border-bottom: 2px solid black;
+  color: #1d1e61;
+  font-weight: 700;
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
 }
-
 .buttonNavigations {
     display: flex;
     align-items: center;

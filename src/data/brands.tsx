@@ -1,4 +1,4 @@
-import { Brand } from "../interfaces";
+import { Brand } from "../components/sections/BrandsSlider/interfaces";
 
 export const dataBrands: Brand[] = [
   {

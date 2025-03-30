@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { dataBrands } from "./data";
+import { dataBrands } from "../../../data/brands";
 import styles from "./styles/styles.module.css";
 
 // Import Swiper styles
