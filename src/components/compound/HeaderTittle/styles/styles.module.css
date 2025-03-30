@@ -1,0 +1,16 @@
+.containerHeaderTittle {
+    display: flex;
+    width: 90%;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.containerHeaderTittle h2 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

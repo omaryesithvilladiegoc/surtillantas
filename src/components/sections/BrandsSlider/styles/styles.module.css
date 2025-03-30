@@ -1,0 +1,41 @@
+.section {
+  width: 99%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slideContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.brandContainer {
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.brandName {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: 500;
+}

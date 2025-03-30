@@ -1,0 +1,40 @@
+.mainWraper {
+    width: 100%;
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+}
+.poligono {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    width: 500px;
+    height: 500px;
+    background-color: #1D1E61B0;
+    position: absolute;
+    z-index: 10000;
+    left: -150;
+    top: -7;
+}
+
+.textInitial {
+    position: absolute;
+    z-index: 10000;
+    top: 130;
+    color: #FFF;
+    left: 50;
+    width: 35rem;
+    font-family: JejuGothic;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 1000px) {
+    .textInitial {
+        font-size: 40px;
+        top: 100;
+        left: 20;
+        width: 20rem;
+    }
+    
+}

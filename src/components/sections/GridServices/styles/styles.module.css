@@ -1,0 +1,94 @@
+.wraperContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.containerCards {
+    display: grid;
+    grid-auto-rows: 15rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,22rem), 1fr));
+    width: 93%;
+    margin: 0 auto;
+    height: 60vh;
+    justify-content: center;
+
+}
+
+.containerCards .card {
+    background-color: transparent;
+    position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex-direction: column;
+   gap: 5rem;
+   width: 95%;
+   margin: 0 auto;
+   overflow: hidden;
+   border-radius: 36px;
+
+   ;
+}
+
+.containerCards .card h2 {
+    color: aliceblue;
+    font-size: 28px;
+    width: 65%;
+    text-transform: uppercase;
+}
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(102, 102, 102, 0.61);
+    top: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.wraperButton  button {
+    border: none;
+    transition: all 0.3s ease-in;
+    border-radius: 36px;
+    width: 75%;
+    height: 36px;
+    background-color: #FED357;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.wraperButton {
+    background-color: white; 
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    height: 36px;
+    border-radius: 40px;
+    overflow: hidden;
+    align-items: center;
+    gap: .5rem;
+
+
+}
