@@ -14,10 +14,11 @@ const LandingPage = () => {
     if (!contentRef.current) return;
 
     const scrollAmount = direction === "up" ? -800 : 800;
-    const currentScroll = document.body.scrollTop;
+    const currentScroll =
+      window.pageYOffset || document.documentElement.scrollTop;
     const targetScroll = currentScroll + scrollAmount;
 
-    document.body.scrollTo({
+    window.scrollTo({
       top: targetScroll,
       behavior: "smooth",
     });

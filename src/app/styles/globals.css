@@ -1,15 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+   
+}
+
+html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     position: relative;
     scroll-behavior: smooth;
     backface-visibility: hidden;
     overflow-x: hidden;
-}
-
-html {
-    overflow: hidden;
 }
