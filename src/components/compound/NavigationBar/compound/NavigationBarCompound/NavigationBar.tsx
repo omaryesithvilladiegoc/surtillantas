@@ -92,7 +92,10 @@ NavigationBar.ButtonContact = function ButtonContact() {
   return (
     <div className={styles.NavigationButton}>
       {" "}
-      <button> {text} </button>{" "}
+      <button>
+        {" "}
+        <a href="#contact">{text}</a>{" "}
+      </button>{" "}
     </div>
   );
 };

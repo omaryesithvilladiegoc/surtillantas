@@ -14,10 +14,11 @@ export const BrandsSlider = () => {
       <HeaderTtittleCompound
         options={{
           tittle: "Marcas",
+          subTittle: "Conoce todas las marcas",
         }}
       >
         <HeaderTtittleCompound.Tittle />
-        <HeaderTtittleCompound.IconAhead />
+        <HeaderTtittleCompound.SubTittle />
       </HeaderTtittleCompound>
       <div className={styles.container}>
         <Swiper

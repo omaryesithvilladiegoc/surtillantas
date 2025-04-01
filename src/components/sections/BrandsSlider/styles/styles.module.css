@@ -8,6 +8,7 @@
   scroll-snap-align: start;
   flex-direction: column;
   justify-content: center;
+  gap: 4rem;
 }
 
 .container {

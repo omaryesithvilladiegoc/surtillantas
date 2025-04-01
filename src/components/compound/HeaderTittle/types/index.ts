@@ -1,5 +1,6 @@
 export type options = {
-  tittle: string;
+  tittle?: string;
+  subTittle?: string;
   urlNavigationGoAhead?: string;
   urlNavigationGoBack?: string;
 };

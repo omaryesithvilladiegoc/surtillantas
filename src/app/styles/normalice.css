@@ -22,6 +22,7 @@
   
   body {
     margin: 0;
+    scroll-behavior: smooth;
   }
   
   /**
@@ -75,6 +76,8 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
+    color: initial;
   }
   
   /**
