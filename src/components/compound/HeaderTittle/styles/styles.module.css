@@ -13,6 +13,12 @@
     font-weight: 700;
     line-height: normal;
 }
+    @media (max-width:700px) {
+        .containerHeaderTittle h2 {
+            font-size: 30px;
+        }
+        
+    }
 
 .containerHeaderTittle h4 {
     font-size: 20px;
