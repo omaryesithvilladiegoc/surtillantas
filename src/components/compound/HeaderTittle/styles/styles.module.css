@@ -8,18 +8,32 @@
 
 .containerHeaderTittle h2 {
     color: #000;
-    font-size: 65px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-    @media (max-width:700px) {
+
+.containerHeaderTittle h4 {
+    font-size: 30px;
+    width: 60%;
+  
+}
+
+
+@media (max-width:700px) {
         .containerHeaderTittle h2 {
-            font-size: 30px;
+            font-size: 35px;
+        }
+        .containerHeaderTittle h4 {
+            font-size: 15px;
+          
+        }
+        .containerHeaderTittle h4 {
+
+            width: 100%;
+          
         }
         
     }
 
-.containerHeaderTittle h4 {
-    font-size: 20px;
-}

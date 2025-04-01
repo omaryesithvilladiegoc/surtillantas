@@ -13,10 +13,12 @@ const GridServices = () => {
       <HeaderTtittleCompound
         options={{
           tittle: "Servicios para flota",
+          subTittle:
+            "Más que un servicio, una experiencia. ¡Obtén lo mejor al mejor precio!",
         }}
       >
         <HeaderTtittleCompound.Tittle />
-        <HeaderTtittleCompound.IconAhead />
+        <HeaderTtittleCompound.SubTittle />
       </HeaderTtittleCompound>
       <section className={styles.containerCards}>
         {" "}

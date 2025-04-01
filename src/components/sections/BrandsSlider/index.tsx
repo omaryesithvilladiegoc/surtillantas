@@ -14,7 +14,8 @@ export const BrandsSlider = () => {
       <HeaderTtittleCompound
         options={{
           tittle: "Marcas",
-          subTittle: "Conoce todas las marcas",
+          subTittle:
+            "Trabajamos con las mejores marcas para ofrecerte calidad, innovación y precio",
         }}
       >
         <HeaderTtittleCompound.Tittle />

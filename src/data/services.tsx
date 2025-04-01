@@ -8,7 +8,7 @@ export const services: Service[] = [
     image: "/assets/services/service6.webp",
   },
   {
-    name: "inspección",
+    name: "inspección de llantas",
     description:
       "Verificar las condiciones generales de la llanta es de suma importancia para poder determinar que acciones tomar según el estado en el que se encuentre. Al revisar su estado podemos comprobar si esta presenta un desgaste regular, así como el estado de las válvulas y descartar cualquier daño posible, como cortes, chipotes, grietas, entre otros.",
     image: "/assets/services/service5.webp",
