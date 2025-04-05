@@ -8,6 +8,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 import { NavBarConext, useNavBarContext } from "./context";
 import { NavBarProps } from "./interfaces";
+import { leagueSpartanLight } from "@/app/fonts";
 
 const NavBarCompound = ({ children, options }: NavBarProps) => {
   return (
@@ -71,7 +72,9 @@ NavBarCompound.ContacInfo = function ContacInfo() {
       <div className={styles.navContactInfoContainer}>
         <li className={styles.navItemMail}>
           <CiMail />
-          <a href={`mailto:${correo}`}>{correo}</a>
+          <a className={leagueSpartanLight.className} href={`mailto:${correo}`}>
+            {correo}
+          </a>
         </li>
 
         <li className={styles.navItemPhone}>

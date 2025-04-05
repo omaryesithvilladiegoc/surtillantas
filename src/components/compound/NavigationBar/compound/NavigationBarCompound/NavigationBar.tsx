@@ -1,11 +1,12 @@
-import { CiSearch } from "react-icons/ci";
 import { NavigationBarContext, useNavigationBarContext } from "./context";
 import { NavigationBarProps } from "./interface";
 import styles from "./styles/styles.module.css";
 import { useRef } from "react";
 import LogoImage from "@/components/ui/Logo";
-import { roboto } from "@/app/fonts";
+import { monserrat } from "@/app/fonts";
 import { useRouter } from "next/navigation";
+import FilterableTires from "@/components/compound/tiresCompound";
+import { tires } from "@/data/tires";
 
 const NavigationBar = function ({ options, children }: NavigationBarProps) {
   const navigationRef = useRef<HTMLDivElement>(null);
@@ -14,27 +15,13 @@ const NavigationBar = function ({ options, children }: NavigationBarProps) {
     <NavigationBarContext.Provider value={{ options }}>
       <div
         ref={navigationRef}
-        className={`${roboto.className} ${styles.navigationWraper}`}
+        className={`${monserrat.className} ${styles.navigationWraper}`}
       >
         <nav className={styles.buttonNavigations}>{children} </nav>
-
-        <div className={styles.frame}>
-          <div className={styles.overlapGroup}>
-            <input
-              type="text"
-              placeholder="Buscar por referencia..."
-              className={styles.textWrapper}
-            />
-          </div>
-          <CiSearch
-            style={{
-              color: "white",
-              fontSize: "38px",
-              fontWeight: "bold",
-              marginRight: "15px",
-            }}
-          />
-        </div>
+        <FilterableTires tires={tires}>
+          <FilterableTires.TireSearch />
+          <FilterableTires.TiresGrid />
+        </FilterableTires>
         <LogoImage />
       </div>
     </NavigationBarContext.Provider>

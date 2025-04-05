@@ -2,6 +2,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { HeaderTittleContext, useHeaderTittleContext } from "./context";
 import { HeaderTittleProps } from "./interfaces";
 import styles from "./styles/styles.module.css";
+import { monserratLight, redRose } from "@/app/fonts";
 
 const HeaderTtittleCompound = function ({
   options,
@@ -17,13 +18,19 @@ const HeaderTtittleCompound = function ({
 HeaderTtittleCompound.Tittle = function Tittle() {
   const context = useHeaderTittleContext();
   const text = context.options.tittle;
-  return <h2>{text}</h2>;
+  return <h2 className={redRose.className}>{text}</h2>;
 };
 
 HeaderTtittleCompound.SubTittle = function SubTittle() {
   const context = useHeaderTittleContext();
   const text = context.options.subTittle;
-  return <h4>{text}</h4>;
+  return <h4 className={monserratLight.className}>{text}</h4>;
+};
+
+HeaderTtittleCompound.ButtonCallAction = function ButtonCallAction() {
+  const context = useHeaderTittleContext();
+  const text = context.options.buttonCallAction;
+  return <button>{text}</button>;
 };
 
 HeaderTtittleCompound.IconAhead = function IconAhead() {

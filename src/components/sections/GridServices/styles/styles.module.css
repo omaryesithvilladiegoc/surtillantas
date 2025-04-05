@@ -1,25 +1,38 @@
 .wraperContainer {
-    height: fit-content;
     display: flex;
-    justify-content: center;
-    gap: 4rem;
     align-items: center;
-    flex-direction: column;
     scroll-snap-align: start;
-    padding-top: 8rem;
+    height: 100vh;
+   
+}
+
+@media (max-width: 768px) {
+    .wraperContainer {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+}
+.containerTittle {
+    display: flex;
     height: fit-content;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
 .containerCards {
     display: grid;
-    grid-auto-rows: 13rem;
+    grid-auto-rows: 25rem;
     gap: .3rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%,20rem), 1fr));
-    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,15rem), 1fr));
+    width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
+  
+
     
 
 }
@@ -29,28 +42,63 @@
     position: relative;
    overflow: hidden;
    display: flex;
-   justify-content: center;
-   align-items: flex-end;
    flex-direction: column;
-   gap: 5rem;
+   height: 100%;
+   justify-content: space-between;
    width: 100%;
    overflow: hidden;
    border-radius: 36px;
 
    ;
 }
+.contentName {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.contentButtons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.contentButtons .informationExtra {
+    display: flex;
+    background-color: white;
+    border-radius: 35px;
+    width: fit-content;
+    height: 25px;
+    overflow: hidden;
+    padding: 0rem 1rem 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.contentButtons button {
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .containerCards .card h2 {
     color: aliceblue;
-    font-size: 28px;
+    font-size: 24px;
     width: 65%;
-    text-transform: uppercase;
+    text-transform:capitalize;
 }
 .wraper {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(102, 102, 102, 0.61);
+    background: rgba(35, 56, 85, 0.61);
     top: 0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: -1;
@@ -62,37 +110,4 @@
     margin: 0 auto;
 }
 
-.buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    width: 95%;
-    margin: 0 auto;
-}
 
-.wraperButton  button {
-    border: none;
-    transition: all 0.3s ease-in;
-    border-radius: 36px;
-    width: 75%;
-    height: 36px;
-    background-color: #FED357;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-}
-
-.wraperButton {
-    background-color: white; 
-    display: flex;
-    justify-content: flex-end;
-    width: 150px;
-    height: 36px;
-    border-radius: 40px;
-    overflow: hidden;
-    align-items: center;
-    gap: .5rem;
-
-
-}
