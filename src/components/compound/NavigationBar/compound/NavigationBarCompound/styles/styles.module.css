@@ -3,7 +3,6 @@
     height: 83px;
     display: flex;
     justify-content: space-around;
-    position: sticky;
     top: 0;
     scroll-snap-align: start;
     z-index: 999999999;

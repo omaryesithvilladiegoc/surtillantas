@@ -8,13 +8,20 @@ import { useRouter } from "next/navigation";
 import FilterableTires from "@/components/compound/tiresCompound";
 import { tires } from "@/data/tires";
 
-const NavigationBar = function ({ options, children }: NavigationBarProps) {
+const NavigationBar = function ({
+  options,
+  children,
+  position,
+}: NavigationBarProps) {
   const navigationRef = useRef<HTMLDivElement>(null);
 
   return (
     <NavigationBarContext.Provider value={{ options }}>
       <div
         ref={navigationRef}
+        style={{
+          position: position ? ("sticky" as const) : undefined,
+        }}
         className={`${monserrat.className} ${styles.navigationWraper}`}
       >
         <nav className={styles.buttonNavigations}>{children} </nav>

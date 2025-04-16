@@ -1,6 +1,7 @@
 "use client";
 import { useState, FormEvent } from "react";
 import styles from "./styles/styles.module.css";
+import { monserrat } from "@/app/fonts";
 
 interface FormData {
   name: string;
@@ -24,11 +25,17 @@ export const FormSection = () => {
 
   return (
     <section id="contact" className={styles.formSection}>
+      <div className={`${monserrat.className} ${styles.titleWraper}`}>
+        <h2>
+          ¿Necesitas más información?
+          <span>Dejanos tus datos y nos pondremos en contacto contigo </span>
+        </h2>
+      </div>
       <div className={styles.container}>
-        <h2 className={styles.title}>Contact Us</h2>
+        <h2 className={styles.title}>Contáctanos</h2>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.formGroup}>
-            <label htmlFor="name">Full Name</label>
+            <label htmlFor="name">Nombre</label>
             <input
               type="text"
               id="name"
@@ -54,7 +61,7 @@ export const FormSection = () => {
           </div>
 
           <div className={styles.formGroup}>
-            <label htmlFor="phone">Phone Number</label>
+            <label htmlFor="phone">Celular</label>
             <input
               type="tel"
               id="phone"
@@ -76,12 +83,12 @@ export const FormSection = () => {
                 }
                 required
               />
-              <span>I agree to the processing of my personal data</span>
+              <span>Acepto el tratamiento de mis datos personales</span>
             </label>
           </div>
 
           <button type="submit" className={styles.submitButton}>
-            Submit
+            Enviar
           </button>
         </form>
       </div>

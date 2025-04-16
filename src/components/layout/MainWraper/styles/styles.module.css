@@ -21,6 +21,10 @@
     top: 130px;
     color: #FFF;
     left: 50px;
+    
+}
+
+.textInitial h2  {
     width: 45rem;
     font-size: 64px;
     font-style: normal;
@@ -29,7 +33,7 @@
 }
 
 @media (max-width: 1000px) {
-    .textInitial {
+    .textInitial h2 {
         font-size: 40px;
         top: 100px;
         left: 20px;

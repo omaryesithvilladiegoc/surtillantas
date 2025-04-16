@@ -2,7 +2,7 @@
 import { useMediaQuery } from "usehooks-ts";
 import NavigationBar from "./compound/NavigationBarCompound/NavigationBar";
 
-const NavigationBarComponent = function () {
+const NavigationBarComponent = function ({ position }: { position?: boolean }) {
   const sx = useMediaQuery("(min-width: 768px)", {
     initializeWithValue: false,
   });
@@ -14,6 +14,7 @@ const NavigationBarComponent = function () {
     <>
       {" "}
       <NavigationBar
+        position={position}
         options={{
           ButtonProducts: "Productos",
           ButtonAboutUs: "Sobre nosotros",

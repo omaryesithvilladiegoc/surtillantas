@@ -7,20 +7,25 @@ import styles from "./styles/styles.module.css";
 import "swiper/css";
 import Image from "next/image";
 import HeaderTtittleCompound from "@/components/compound/HeaderTittle";
+import { ButtonTonal } from "@/components/layout/Buttons";
 
 export const BrandsSlider = () => {
   return (
     <section className={styles.section}>
-      <HeaderTtittleCompound
-        options={{
-          tittle: "Marcas",
-          subTittle:
-            "Trabajamos con las mejores marcas para ofrecerte calidad, innovación y precio",
-        }}
-      >
-        <HeaderTtittleCompound.Tittle />
-        <HeaderTtittleCompound.SubTittle />
-      </HeaderTtittleCompound>
+      <div className={styles.containerTittleWraper}>
+        <HeaderTtittleCompound
+          options={{
+            tittle: "Marcas",
+            subTittle:
+              "Trabajamos con las mejores marcas para ofrecerte calidad, innovación y precio",
+          }}
+        >
+          <HeaderTtittleCompound.Tittle />
+          <HeaderTtittleCompound.SubTittle />
+        </HeaderTtittleCompound>
+        <ButtonTonal text="Quiero saber más" />
+      </div>
+
       <div className={styles.container}>
         <Swiper
           modules={[Autoplay]}

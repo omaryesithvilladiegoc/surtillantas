@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { roboto } from "@/app/fonts";
 import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
+import { ButtonTonal } from "@/components/layout/Buttons";
 
 const GridServices = () => {
   return (
@@ -25,6 +26,7 @@ const GridServices = () => {
           <HeaderTtittleCompound.Tittle />
           <HeaderTtittleCompound.SubTittle />
         </HeaderTtittleCompound>
+        <ButtonTonal text="Quiero saber más" />
       </div>
 
       <Swiper

@@ -7,4 +7,5 @@ export interface NavigationBarOptions {
 export interface NavigationBarProps {
   options: options;
   children: React.ReactNode;
+  position?: boolean;
 }

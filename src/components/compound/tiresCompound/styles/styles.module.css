@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
+  z-index: 999999;
+  transition: all 0.3s ease;
 }
 
 /* search Section */
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    transition: all 0.3s ease;
   }
   
   
@@ -25,6 +27,10 @@
     position: absolute;
     top: 27px;
     width: 265px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+                0 6px 12px rgba(0, 0, 0, 0.12),
+                0 4px 6px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
   }
 
   @media (max-width:600px) {
@@ -49,6 +55,7 @@
     top: 9px;
     white-space: nowrap;
     width: 127px;
+    transition: all 0.3s ease;
   }
 
   .frame .overlapGroup input {
@@ -56,18 +63,22 @@
     width: 80%;
     height: fit-content;
     font-size: 11px;
+    transition: all 0.3s ease;
   }
   
 .frame .overlapGroup input:focus {
     border: none;
     outline: none;
+    transition: all 0.3s ease;
 }
+
   .frame .vector {
     height: 27px;
     left: 315px;
     position: absolute;
     top: 28px;
     width: 28px;
+    transition: all 0.3s ease;
   }
 
   .containerCards {
@@ -82,6 +93,10 @@
     overflow: hidden;
     border-radius: 10px;
     top: 100;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 12px rgba(0, 0, 0, 0.12),
+    0 4px 6px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
   }
   
 .containerCardWraper {
@@ -92,8 +107,7 @@
   border-radius: 15px;
   cursor: pointer;
   outline: none;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .containerCardWraper:hover {
@@ -102,4 +116,31 @@
 
   .containerCardWraper p {
       font-size: .5rem;
+      transition: all 0.3s ease;
+  }
+
+  .containerSearchWord {
+    display: flex;
+    position: absolute;
+    top: 4;
+    left: 50;
+    padding: .1rem;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .containerSearchWord p  {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: .1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    transition: all 0.3s ease;
+  }
+
+  .wraperContainer {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
   }

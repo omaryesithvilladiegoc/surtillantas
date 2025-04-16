@@ -3,6 +3,7 @@
     scroll-snap-align: start;
     flex-direction: column;
     padding-top: 6rem;
+    height: 110vh;
     width: 70%;
     margin: 0 auto;
  

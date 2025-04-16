@@ -1,13 +1,22 @@
 .formSection {
-  padding: 4rem 2rem;
+
   background-color: #f5f5f5;
-  height: 100vh;
+  height: 88vh;
   scroll-snap-align: start;
+  display: grid;
+  grid-auto-rows: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,30rem), 1fr));
+  
 }
 
+
 .container {
-  max-width: 600px;
+ 
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .title {
@@ -18,10 +27,9 @@
 }
 
 .form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  
+ 
 }
 
 .formGroup {
@@ -40,8 +48,9 @@
 .formGroup input[type="tel"] {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid #668cb5;
+  background-color: transparent;
   font-size: 1rem;
 }
 
@@ -81,4 +90,18 @@
   .form {
     padding: 1.5rem;
   }
+}
+
+.titleWraper {
+  margin: 0 auto;
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleWraper h2 {
+  font-size: 50px;
+}
+.titleWraper h2 span {
+  color: #0056b3;
 }

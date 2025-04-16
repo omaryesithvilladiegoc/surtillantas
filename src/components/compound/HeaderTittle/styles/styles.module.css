@@ -3,7 +3,8 @@
     flex-direction: column;
     width: 90%;
     height: fit-content;
-    margin: 0 auto;
+    margin-top: 1rem;
+
 }
 
 .containerHeaderTittle h2 {
