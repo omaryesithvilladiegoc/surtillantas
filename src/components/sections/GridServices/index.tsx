@@ -31,6 +31,7 @@ const GridServices = () => {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
+        style={{ display: "grid" }}
         spaceBetween={30}
         slidesPerView={3}
         navigation
